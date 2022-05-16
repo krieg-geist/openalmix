@@ -159,9 +159,7 @@ SamplePlayer::SamplePlayer(const char *filename) {
     throw("Unsupported channel count from file");
   }
 
-  frame_size =
-      ((size_t)BUFFER_SAMPLES * (size_t)p_Sfinfo.channels) * sizeof(short);
-  p_Membuf = static_cast<short *>(malloc(frame_size));
+  frame_size = p_Sfinfo.channels * sizeof(short);
 }
 
 SamplePlayer::~SamplePlayer() {

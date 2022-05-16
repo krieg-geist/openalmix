@@ -1,3 +1,4 @@
 build/
+lib/
 res/samples/*
 .vscode/

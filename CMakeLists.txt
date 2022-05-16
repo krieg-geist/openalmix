@@ -15,6 +15,8 @@ add_executable(mixer
     src/main.cpp
     src/SamplePlayer.cpp
     src/SamplePlayer.h
+    src/SampleRecorder.cpp
+    src/SampleRecorder.h
     src/SoundDevice.cpp
     src/SoundDevice.h
 )
